@@ -1,11 +1,11 @@
 #### 1.盒模型
 
-* 标准盒子模型:box-sizing：border-box：盒子的宽度和高度就是给定的宽度和高度，如果设置了padding和border，将减少内容的宽度和高度。
-* box-sizing：content-box：盒子的宽度是**给定的宽度+padding+border**,盒子的高度是**给定的高度 + padding + border**，设置了padding和border也不会减少内容的宽度和高度。
+* IE模型:box-sizing：border-box：盒子的宽度和高度就是给定的宽度和高度，如果设置了padding和border，将减少内容的宽度和高度。
+* 标准盒子模型：box-sizing：content-box：盒子的宽度是**给定的宽度+padding+border**,盒子的高度是**给定的高度 + padding + border**，设置了padding和border也不会减少内容的宽度和高度。是默认值
 
 ####  2.flex 属性布局
 
-* display:flex; 在父元素设置，子元素受弹性盒影响，flex-direction决定主轴的方向，align-items决定交叉轴的排列方向，justify-content觉得主轴排列方式，默认排成一行，如果超出一行，按比例压缩 flex:1; 子元素设置，设置子元素如何分配父元素的空间，flex:1,子元素宽度占满整个父元素align-items:center 定义子元素在父容器中的对齐方式，center 垂直居中justify-content:center 设置子元素在父元素中居中，前提是子元素没有把父元素占满，让子元素水平居中
+* display:flex; 在父元素设置，子元素受弹性盒影响，flex-direction决定主轴的方向，align-items决定交叉轴的排列方式，justify-content觉得主轴排列方式，默认排成一行，如果超出一行，按比例压缩 flex:1; 子元素设置，设置子元素如何分配父元素的空间，flex:1,子元素宽度占满整个父元素align-items:center 定义子元素在父容器中的对齐方式，center 垂直居中justify-content:center 设置子元素在父元素中居中，前提是子元素没有把父元素占满，让子元素水平居中
 
 #### 3.css中行内元素和行内块元素空白间隙的问题
 
@@ -83,6 +83,9 @@ text-overflow: ellipsis;
 display: -webkit-box;
 -webkit-box-orient: vertical;
 -webkit-line-clamp: 2;
+//-webkit-line-clamp用来限制在一个块元素显示的文本的行数。 为了实现该效果，它需要组合其他的WebKit属性。常见结合属性：
+//display: -webkit-box; 必须结合的属性 ，将对象作为弹性伸缩盒子模型显示 。
+//-webkit-box-orient 必须结合的属性 ，设置或检索伸缩盒对象的子元素的排列方式 。
 
 ```
 

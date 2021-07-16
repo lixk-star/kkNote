@@ -67,6 +67,7 @@ pomise构造函数是同步执行的，then方法是异步执行的
 `typeof`、`Object.toString()`、`instanceof`
 
 #### 9.async/await 如何通过同步的方式实现异步
+
 async起什么作用---输出的是一个Promise对象。
 
 #### 10.深拷贝的方法
